@@ -105,8 +105,9 @@ int main() {
     }
 
     // remove all cycles except the smallest one
-    // time complexity: O(m) where m is the 
-    // number of edges in all cycles being removed
+    // time complexity: O(m*n) where m is the 
+    // number of edges in all cycles being removed and 
+    // n is the size of cycles 
     for (int i = 0; i < cycles.size(); i++) {
 
         if (i == smallestIndex)
